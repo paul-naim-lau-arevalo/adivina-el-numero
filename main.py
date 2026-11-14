@@ -12,7 +12,7 @@ def mostrar_bienvenida():
 
 
 def elegir_dificultad():
-    print("\n  ELEGÍ LA DIFICULTAD")
+    print("\n  ELIGE LA DIFICULTAD")
     print("  " + "-" * 29)
     print("  [1] Fácil    · del 1 al 10")
     print("  [2] Medio    · del 1 al 20")
@@ -25,7 +25,7 @@ def elegir_dificultad():
         opcion = input("  Tu opción: ").strip()
         if opcion in niveles:
             return niveles[opcion]
-        print("  Elegí una opción válida: 1, 2 o 3.")
+        print("  Elige una opción válida: 1, 2 o 3.")
 
 
 def pedir_numero(limite):
@@ -34,7 +34,7 @@ def pedir_numero(limite):
         try:
             numero = int(respuesta)
         except ValueError:
-            print("  Escribí un número entero para continuar.")
+            print("  Escribe un número entero para continuar.")
             continue
 
         if 1 <= numero <= limite:
@@ -71,7 +71,7 @@ def jugar():
     print("\n" + "-" * 42)
     print("  Se terminaron los intentos.")
     print(f"  El número secreto era {secreto}.")
-    print("  ¡Podés volver a intentarlo!")
+    print("  ¡Puedes volver a intentarlo!")
     print("-" * 42)
 
 
@@ -82,15 +82,7 @@ def preguntar_si_repite():
             return True
         if respuesta in ("n", "no"):
             return False
-        print("Respondé con s o n.")
-
-
-
-
-
-# APORTE COMPAÑERO 2:
-# Propuesta: agregar un contador de partidas ganadas y perdidas.
-# Pueden trabajar aquí y después integrar los cambios al juego.
+        print("Responde con s o n.")
 
 
 def main():
