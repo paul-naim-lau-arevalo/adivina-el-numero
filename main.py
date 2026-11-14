@@ -59,7 +59,7 @@ def jugar():
 
         if numero == secreto:
             print("\n" + "*" * 42)
-            print("              ¡GANASTE!")
+            print("              ¡FELICIDADES, GANASTE!")
             print(f"  Adivinaste el número {secreto} en {intento} intento(s).")
             print("*" * 42)
             return
